@@ -6,6 +6,7 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
+library(ggplot2)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -17,6 +18,10 @@ When you click the **Knit** button a document will be generated that includes bo
 
 ```{r cars}
 summary(cars)
+ggplot(cars, aes(speed, dist))+
+  geom_point()+
+  geom_smooth()
+
 ```
 
 ## Including Plots
