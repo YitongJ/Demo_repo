@@ -17,7 +17,8 @@ ggplot(cars, aes(speed, dist))+
   geom_point()+
   geom_smooth()+
   labs(x = "speed",
-       y = "distance")
+       y = "distance",
+       title = "Relation between speed and distance")
 
 
 
