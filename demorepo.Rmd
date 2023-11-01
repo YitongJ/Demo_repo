@@ -21,7 +21,8 @@ summary(cars)
 ggplot(cars, aes(speed, dist))+
   geom_point()+
   geom_smooth()+
-  labs(x = "speed")
+  labs(x = "speed",
+       y = "distance")
 
 
 
